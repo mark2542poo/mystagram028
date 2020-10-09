@@ -1,54 +1,40 @@
-* {
-    box-sizing: border-box;
-    background: var(--bg);
-    /* background-color: chocolate; */
-}
+:root{
+    --base : rgb(0, 0, 0);
+    --spacing :0px;
+    --blur : 10px;
+   }
+   
+   p.c {
+       font-style: oblique;
+     }
 
-:root {
-    --base: #fbff0059;
-    --spacing: 5px;
-    --blur: 5px;
-    --bg: Yellow;
-}
+     h1 {
+        text-align: center;
+        font-family: 'Lemonada', cursive;
+        
+    }
+   
+     input[type=text] {
+       width: 50%;
+       box-sizing: border-box;
+       border: 2px solid #ccc;
+       border-radius: 4px;
+       font-size: 16px;
+       background-color: white;
+       background-image: url('searchicon.png');
+       background-position: 10px 10px; 
+       background-repeat: no-repeat;
+       padding: 12px 20px 12px 40px;
+     }
+   
+   img {
+       border-radius: 50%;
+     }
+   
+   
+   img{
+   padding: var(--spacing);
+   background: var(--base);
+   filter: blur(var(--blur));
+   } 
 
-h1 {
-    text-align: center;
-    font-family: 'Lemonada', cursive;
-    margin-top: 15%
-}
-
-h5 {
-    font-family: 'Lemonada', cursive;
-}
-
-.search {
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    padding: 20px;
-    width: 40%;
-    height: 40px;
-    text-align: center;
-    font-family: 'Lemonada', cursive;
-}
-
-input:focus {
-    outline: none;
-}
-
-.gallery {
-    margin-top: 30px;
-    text-align: center;
-    background-color: transparent;
-}
-
-.gallery img {
-    background-color: transparent;
-    padding: 10px;
-    margin: 10px;
-    text-align: center;
-    border: black;
-    padding: var(--spacing);
-    background: var(--base);
-    filter: blur(var(--blur));
-}
